@@ -8,22 +8,24 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    
+    // 2. Передать массив с ответами на экран с результатами
+    // 3. Определить наиболее часто встречающийся тип животного
+    // 4. Отобразить результаты в соответствии с этим животным
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navigationItem.hidesBackButton = true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
     }
-    */
-
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBOutlet weak var definitionLabel: UILabel!
+    
+    
+    
 }

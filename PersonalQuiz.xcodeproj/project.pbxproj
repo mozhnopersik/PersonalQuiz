@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		73AD91B42AC01F3E00D3E3AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD91B32AC01F3E00D3E3AD /* AppDelegate.swift */; };
 		73AD91B62AC01F3E00D3E3AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD91B52AC01F3E00D3E3AD /* SceneDelegate.swift */; };
-		73AD91B82AC01F3E00D3E3AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD91B72AC01F3E00D3E3AD /* ViewController.swift */; };
+		73AD91B82AC01F3E00D3E3AD /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD91B72AC01F3E00D3E3AD /* QuestionViewController.swift */; };
 		73AD91BB2AC01F3E00D3E3AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AD91B92AC01F3E00D3E3AD /* Main.storyboard */; };
 		73AD91BD2AC01F4000D3E3AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73AD91BC2AC01F4000D3E3AD /* Assets.xcassets */; };
 		73AD91C02AC01F4000D3E3AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AD91BE2AC01F4000D3E3AD /* LaunchScreen.storyboard */; };
+		73AD91C82AC01FEA00D3E3AD /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD91C72AC01FEA00D3E3AD /* ResultViewController.swift */; };
+		73AD91CB2AC0203700D3E3AD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AD91CA2AC0203700D3E3AD /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73AD91B02AC01F3E00D3E3AD /* PersonalQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AD91B32AC01F3E00D3E3AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73AD91B52AC01F3E00D3E3AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		73AD91B72AC01F3E00D3E3AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73AD91B72AC01F3E00D3E3AD /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		73AD91BA2AC01F3E00D3E3AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73AD91BC2AC01F4000D3E3AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73AD91BF2AC01F4000D3E3AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73AD91C12AC01F4000D3E3AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73AD91C72AC01FEA00D3E3AD /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		73AD91CA2AC0203700D3E3AD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		73AD91B22AC01F3E00D3E3AD /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				73AD91C92AC0202000D3E3AD /* Models */,
 				73AD91B32AC01F3E00D3E3AD /* AppDelegate.swift */,
 				73AD91B52AC01F3E00D3E3AD /* SceneDelegate.swift */,
-				73AD91B72AC01F3E00D3E3AD /* ViewController.swift */,
+				73AD91B72AC01F3E00D3E3AD /* QuestionViewController.swift */,
 				73AD91B92AC01F3E00D3E3AD /* Main.storyboard */,
 				73AD91BC2AC01F4000D3E3AD /* Assets.xcassets */,
 				73AD91BE2AC01F4000D3E3AD /* LaunchScreen.storyboard */,
 				73AD91C12AC01F4000D3E3AD /* Info.plist */,
+				73AD91C72AC01FEA00D3E3AD /* ResultViewController.swift */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		73AD91C92AC0202000D3E3AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73AD91CA2AC0203700D3E3AD /* Question.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73AD91B82AC01F3E00D3E3AD /* ViewController.swift in Sources */,
+				73AD91CB2AC0203700D3E3AD /* Question.swift in Sources */,
+				73AD91B82AC01F3E00D3E3AD /* QuestionViewController.swift in Sources */,
 				73AD91B42AC01F3E00D3E3AD /* AppDelegate.swift in Sources */,
 				73AD91B62AC01F3E00D3E3AD /* SceneDelegate.swift in Sources */,
+				73AD91C82AC01FEA00D3E3AD /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
